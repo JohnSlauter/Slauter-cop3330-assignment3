@@ -1,0 +1,67 @@
+Goal: Given a text file, count the frequency at which
+      each word in the file appears and print the results
+      in a table
+
+     main(){
+
+        Create new hashmap (key is string, value is integer)
+
+        Use count_Words function to set up hashmap
+
+        Create new ArrayList
+
+        Set up ArrayList based on the hashmap by using map_To_ArrayList function
+
+        Sort ArrayList with sort_ArrayList function
+
+        Print information with print_Frequencies function
+
+    }
+
+    HashMap<String, Integer> count_Words(String input_file) {
+
+        Create new hashmap (key is string, value is integer)
+
+        Create new scanner connected to input file
+
+        Go through every word in the file
+
+        if(word is already in hashmap){
+
+            Put word in the hashmap again, but set the value as the previous value associated with the word + 1
+
+        }
+
+        else{
+
+            Put word in hashmap, set associated value to 1
+
+        }
+
+        Return hashmap
+
+    }
+
+    ArrayList<Map.Entry<String, Integer>> map_To_ArrayList(HashMap<String, Integer> map){
+
+        Create new ArrayList of Map elements (key is String, value is Integer)
+
+        Store all elements in the hashmap in the ArrayList
+
+        return ArrayList
+
+    }
+
+    ArrayList<Map.Entry<String, Integer>> sort_ArrayList(ArrayList<Map.Entry<String, Integer>>){
+
+        Sort ArrayList elements by value (descending) with Selection Sort
+
+        Return sorted ArrayList
+
+    }
+
+    void print_Frequencies(ArrayList<Map.Entry<String, Integer>> list){
+
+        Print out each word in the ArrayList and its associated frequency in a table format
+
+    }

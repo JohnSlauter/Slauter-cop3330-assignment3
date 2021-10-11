@@ -1,0 +1,47 @@
+Goal: Given a text file and a word to replace, replace all instances
+      of the word with another specified replacement word
+
+    main(){
+
+            Read input text and place in a string with read_Input function
+
+            Use replace_All function to modify the string with the input text
+
+            Use new scanner to get the output file name from user
+
+            Write contents of the string to output file with write_Output function
+
+            Close scanner
+
+    }
+
+    read_Input(String input_file) {
+
+       Create new scanner that will read input file
+
+       Store contents of input file into a string
+
+       Return string
+
+    }
+
+    replace_All(String text, String to_replace, String replacement){
+
+        Store all the index of all instances of the word that will be replaced
+        *The indexes must be stored from last to first
+
+        For each index, set the text to equal the substring before the word + replacement + substring after the word
+
+        Return text
+
+    }
+
+    write_Output(String destination, String text) {
+
+        Create new BufferWriter object that will write to the specified address
+
+        Write the text
+
+        Close writer
+
+    }

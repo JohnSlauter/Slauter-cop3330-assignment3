@@ -1,0 +1,51 @@
+Goal: Sort a list of names contained in a file alphabetically
+      and write the sorted names to a new file
+
+    main{
+
+        Read in names with read_File function
+
+        Alphabetize names with alphabetize_ArrayList function
+
+        Write names to output file using writeToFile function
+
+    }
+
+    read_File(InputFile) {
+
+        Create ArrayList of Strings
+
+        Open new Scanner to input file
+
+        Set Scanner delimiter to be new line character (\n)
+
+        Read in the contents of input file with Scanner and store it in the ArrayList
+
+        Close Scanner
+
+        return ArrayList
+
+    }
+
+    alphabetize_ArrayList(ArrayList<String>){
+
+        Selection sort the ArrayList based by using compareTo method of String objects
+
+        return sorted ArrayList
+
+    }
+
+    write_To_File(ArrayList<String>, output_file) {
+
+        Create new BufferedWriter object that will write to output_file
+
+        Write total number of names
+
+        Write line of dashes
+
+        Write all names in ArrayList, separate with new line
+
+        Close writer
+
+    }
+

@@ -1,0 +1,63 @@
+Goal: Create program that creates website files based on
+      given title and author and asks if user wants
+      folders for JS and CSS and creates them if yes
+
+      main(){
+
+         Create Scanner to read user input
+
+         Clear out files from previous use of this program
+
+         Ask for and store title and author
+
+         Ask about JS folder and store response in boolean
+
+         Ask about CSS folder and store response in boolean
+
+         Make files with createFiles function
+
+     }
+
+     create_Files(String location, String site_name, String author_name, boolean JS_folder, boolean CSS_folder) {
+
+         Create main folder for website with the user-specified name
+
+         Create index.html, add the site name and author name to it, and store in main folder
+
+         if(user wants JS folder){
+
+            create JS folder in main folder
+
+         }
+
+         if(user wants CSS folder){
+
+            create CSS in main folder
+
+         }
+
+         Print creation message
+
+     }
+
+     create_Folder(String folder_address){
+
+         Create new folder with specified address by using ".mkdir" function of File objects
+
+     }
+
+    create_Index_File(String index_address, String site_name, String author_name) {
+
+         Create new BufferedWriter object that will write to the specified address
+
+         Write standard html file and put site name in <title> area and author name in <meta> area
+
+         Close writer
+
+     }
+
+     clear(String location){
+
+         Delete all files in a folder and then delete the folder itself
+
+     }

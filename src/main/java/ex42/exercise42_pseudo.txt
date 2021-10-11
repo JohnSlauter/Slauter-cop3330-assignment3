@@ -1,0 +1,57 @@
+Goal: Given a file of first names, last names, and salaries,
+      sort the employees by alphabetical order and print out
+      the sorted information in a table
+
+     Employee object{
+
+        Has fields for first name, last name, and salary
+
+        Has "getter" methods for variables
+
+     }
+
+     main(){
+
+        Create ArrayList of Employee objects
+
+        Array of 3 ints to store longest word in each section of the table
+
+        Read in data with read_File function and store in Employee ArrayList
+
+        Print output table with get_Output
+
+    }
+
+     read_File(input_file){
+
+        Create ArrayList of Employee objects
+
+        Create new Scanner that reads input_file
+
+        Set Scanner delimiter to be comma and new line character
+
+        Read file with scanner and store in ArrayList
+
+        Close Scanner
+
+        return ArrayList
+
+    }
+
+    find_Longest_Length(ArrayList<Employee>){
+
+        Create int array with length 3
+
+        Find longest first name, last name, and salary in ArrayList and store lengths in int array
+
+        return int array
+
+    }
+
+    get_Output(ArrayList<Employee>, int[3]){
+
+        Format Output
+
+        Return Output
+
+    }

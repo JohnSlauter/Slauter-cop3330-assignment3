@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App{
+    Attributes
+    -String INPUT_ADDRESS
+    -String OUTPUT_ADDRESS
+--
+    Methods
+    +void main(String args[])
+    #ArrayList<String> read_File(String input_file)
+    #ArrayList<String> alphabetize_ArrayList(ArrayList<String> names)
+    -void write_To_File(ArrayList<String> names, String output_file)
+}
+
+@enduml

@@ -1,0 +1,7 @@
+{
+  "products" : [
+    {"name": "A1", "price": 1.00, "quantity": 26 },
+    {"name": "B2", "price": 2.00, "quantity": 25 },
+    {"name": "C3", "price": 3.00, "quantity": 24 }
+  ]
+}

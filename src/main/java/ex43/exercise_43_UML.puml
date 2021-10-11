@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App{
+    Attributes
+    -String LOCATION
+--
+    Methods
+    +void main(String args[])
+    -String create_Files(String location, String site_name, String author_name, boolean JS_folder, boolean CSS_folder)
+    -String concat_Creation_Message(String s, String path)
+    #void create_Folder(String folder_address)
+    #void create_Index_File(String index_address, String site_name, String author_name)
+    #void clear(String location)
+}
+
+@enduml

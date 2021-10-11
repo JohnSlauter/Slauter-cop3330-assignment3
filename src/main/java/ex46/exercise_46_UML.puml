@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App{
+    Attributes
+    -String INPUT_FILE
+--
+    Methods
+    +void main(String[] args)
+    #HashMap<String, Integer> count_Words(String input_file)
+    #ArrayList<Map.Entry<String, Integer>> map_To_ArrayList(HashMap<String, Integer> map)
+    #ArrayList<Map.Entry<String, Integer>> sort_ArrayList(ArrayList<Map.Entry<String, Integer>> list)
+    -void print_Frequencies(ArrayList<Map.Entry<String, Integer>> list)
+    #int length_Of_Longest_Word(ArrayList<Map.Entry<String, Integer>> list)
+}
+
+@enduml

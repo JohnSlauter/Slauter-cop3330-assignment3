@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Class App{
+    Attributes
+    -String INPUT_FILE
+--
+    Methods
+    +void main(String args[])
+    #ArrayList<Employee> read_File(String input_file)
+    #int[] find_Longest_Length(ArrayList<Employee> employees)
+    -String get_Output(ArrayList<Employee> employees, int[] longest_length)
+    -String get_Spaces(int longest_length, int current_length)
+}
+
+Class Employee{
+    Attributes
+    -String f_name
+    -String l_name
+    -String salary
+--
+    Methods
+    +String get_F_Name()
+    +String get_L_Name()
+    +String get_Salary()
+    #void set_Salary(String salary)
+}
+
+Employee->App
+
+@enduml

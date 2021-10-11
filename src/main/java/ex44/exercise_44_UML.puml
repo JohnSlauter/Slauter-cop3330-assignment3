@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App{
+     Attributes
+    -String INPUT_FILE
+--
+    Methods
+    +void main(String args[])
+    #ArrayList<Product> read_Input(String input_file)
+    -HashMap<String, Product> create_Product_Map(ArrayList<Product> product_list)
+    -void search_Map(HashMap<String, Product> product_map)
+}
+
+class Product{
+    Attributes
+    -String name
+    -double price
+    -int quantity
+--
+    Methods
+    +String get_Name()
+    +double get_Price()
+    +int get_Quantity()
+}
+
+class ProductList{
+    Attributes
+    -ArrayList<Product> products
+--
+    Methods
+    +ArrayList<Product> get_Products()
+}
+
+Product -> ProductList
+ProductList->App
+
+@enduml

@@ -1,0 +1,77 @@
+Goal: Create search by name for a json file containing products
+
+      Product object{
+
+        Has fields for String name, double price, and int quantity
+
+        Has "getter" methods
+
+      }
+
+      ProductList object{
+
+        Contains ArrayList of products
+
+        Has "getter" method for ArrayList
+
+      }
+
+      main(){
+
+             Create ArrayList of Product
+
+             Use read_Input function to put products from the json file into the ArrayList
+
+              Create hashmap based on arraylist using create_Product_Map function
+
+              Use search map function
+
+          }
+
+      read_Input(String input_file) {
+
+              Create new BufferedReader object set to read the input file
+
+              Create new Gson object
+
+              Create new ProductList object
+
+              Use Gson object to copy the data from the BufferedReader to the ProductList
+
+              Close the reader
+
+              return the ProductList's ArrayList
+
+          }
+
+      create_Product_Map(ArrayList<Product> product_list){
+
+              Create new hashmap where key is name of the product and value is the product object
+
+              Put every Product object in the ArrayList into hashmap (key = Product object's name, value = Product object)
+
+              return hashmap
+
+          }
+
+      search_Map(HashMap<String, Product> product_map){
+
+              Create new scanner to get input from user
+
+              Ask for search criteria
+
+              Store search criteria
+
+              while(search criteria invalid){
+
+                  Ask again
+
+                  Store the new search criteria
+
+              }
+
+              Retrieve the Product associated with the search criteria and print out information
+
+              Close scanner
+
+          }
